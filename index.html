@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conecta Unaí — Inclusão digital em Unaí-MG</title>
+<meta name="description" content="Portal gratuito que reúne serviços públicos digitais, uma trilha de alfabetização digital e uma rede de voluntários para os bairros de Unaí-MG.">
+<meta name="theme-color" content="#0d4f6c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="container">
+    <a class="marca" href="index.html">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="16" fill="#fff"/>
+        <circle cx="11" cy="12" r="4" fill="#157f5f"/>
+        <circle cx="23" cy="12" r="4" fill="#e8a33d"/>
+        <circle cx="17" cy="23" r="4" fill="#0d4f6c"/>
+        <path d="M11 12 L23 12 L17 23 Z" fill="none" stroke="#0d4f6c" stroke-width="1.6"/>
+      </svg>
+      Conecta Unaí
+    </a>
+    <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
+      <button type="button" id="btn-diminuir" aria-label="Diminuir o tamanho da letra">A-</button>
+      <button type="button" id="btn-aumentar" aria-label="Aumentar o tamanho da letra">A+</button>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+</header>
+
+<nav class="menu" aria-label="Menu principal">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços essenciais</a></li>
+      <li><a href="trilha.html">Aprenda a usar</a></li>
+      <li><a href="voluntarios.html">Seja voluntário</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="capa">
+  <div class="container">
+    <h1>Estar conectado não pode ser privilégio de poucos</h1>
+    <p>O Conecta Unaí reúne, em um só lugar e em linguagem simples, os serviços públicos
+       que hoje só existem pela internet, um passo a passo para aprender a usar o celular
+       com segurança e um caminho para quem quer ajudar o próprio bairro.</p>
+  </div>
+</div>
+
+<main id="conteudo">
+  <div class="container">
+
+    <p class="chamada">Você não precisa saber nada de tecnologia para usar este portal.
+       Ele funciona em qualquer celular, gasta pouca internet e pode ser aberto de novo
+       mesmo quando a conexão estiver ruim.</p>
+
+    <h2>Por onde começar</h2>
+    <div class="grade">
+
+      <article class="cartao">
+        <span class="selo">Resolver algo hoje</span>
+        <h3>Serviços essenciais</h3>
+        <p>Como tirar documentos, marcar consulta pelo Meu SUS Digital, consultar o
+           Cadastro Único e o Bolsa Família, buscar vaga de emprego e acessar a
+           Prefeitura de Unaí. Cada serviço explicado em uma frase, sem termo difícil.</p>
+        <a class="botao" href="servicos.html">Ver os serviços</a>
+      </article>
+
+      <article class="cartao">
+        <span class="selo">Aprender do zero</span>
+        <h3>Trilha de alfabetização digital</h3>
+        <p>Seis passos, do começo ao fim: criar um e-mail, fazer a conta gov.br,
+           reconhecer golpes, cuidar da sua senha, montar um currículo e fazer
+           cursos gratuitos. O portal marca o que você já concluiu.</p>
+        <a class="botao" href="trilha.html">Começar a trilha</a>
+      </article>
+
+      <article class="cartao">
+        <span class="selo">Ajudar o bairro</span>
+        <h3>Rede de voluntários</h3>
+        <p>Quem já sabe usa o que sabe para ensinar. Aqui está o roteiro pronto de uma
+           oficina de uma hora, que qualquer pessoa pode aplicar em uma igreja, escola,
+           associação de moradores ou na própria casa.</p>
+        <a class="botao" href="voluntarios.html">Quero ajudar</a>
+      </article>
+
+    </div>
+
+    <h2>O problema que este portal enfrenta</h2>
+    <p>Serviços que antes eram resolvidos no balcão migraram para aplicativos: agendamento
+       de consulta, benefício social, carteira de trabalho, comprovante de vacina, matrícula
+       escolar. Quem não domina o celular perde acesso a direitos que já são seus. Nos bairros
+       Canaã, Novo Horizonte, Iuna, Cidade Nova e Sagrada Família, em Unaí-MG, a barreira
+       raramente é falta de aparelho — é falta de alguém que ensine e de um lugar confiável
+       para começar.</p>
+
+    <div class="bloco">
+      <h3>Este portal foi pensado para a realidade local</h3>
+      <p>Nada de aplicativo para instalar da loja, cadastro obrigatório ou senha para criar.
+         Todo o conteúdo é aberto, cabe em poucos segundos de carregamento e continua
+         disponível no celular depois da primeira visita, mesmo com a internet oscilando.</p>
+    </div>
+
+    <h2>Como o portal foi construído</h2>
+    <div class="rolagem">
+      <table>
+        <caption class="naoimprime" style="text-align:left;padding:6px 0;color:var(--texto-suave)">
+          Decisões técnicas e o motivo de cada uma
+        </caption>
+        <thead>
+          <tr><th scope="col">Decisão</th><th scope="col">Por que foi tomada</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Site estático em HTML, CSS e JavaScript puro</td>
+            <td>Carrega rápido em celular antigo e em rede 3G, sem depender de servidor caro nem de biblioteca externa.</td>
+          </tr>
+          <tr>
+            <td>Botões de aumentar letra e de alto contraste</td>
+            <td>Boa parte do público é idosa ou tem baixa visão. A preferência fica salva no próprio aparelho.</td>
+          </tr>
+          <tr>
+            <td>Funcionamento sem internet após a primeira visita</td>
+            <td>Muitos moradores usam plano pré-pago com pouca franquia de dados.</td>
+          </tr>
+          <tr>
+            <td>Sem cadastro e sem coleta de dados pessoais</td>
+            <td>Reduz a desconfiança de quem tem medo de golpe e evita responsabilidade sobre dados sensíveis.</td>
+          </tr>
+          <tr>
+            <td>Conteúdo revisado para leitura em voz alta</td>
+            <td>O voluntário consegue ler a tela junto com o morador, sem precisar traduzir termo técnico.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>Conecta Unaí</strong> — iniciativa comunitária de inclusão digital para os bairros de Unaí-MG.</p>
+    <p>Projeto desenvolvido na Atividade Extensionista II: Tecnologia Aplicada à Inclusão Digital,
+       do curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas do
+       Centro Universitário Internacional Uninter.</p>
+    <p>Conteúdo aberto e gratuito. Este portal não pede senha, não cobra nada e não guarda dados pessoais.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

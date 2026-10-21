@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trilha de alfabetização digital — Conecta Unaí</title>
+<meta name="description" content="Seis passos para aprender a usar o celular e a internet do zero: e-mail, conta gov.br, segurança, currículo e cursos gratuitos.">
+<meta name="theme-color" content="#0d4f6c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="container">
+    <a class="marca" href="index.html">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="16" fill="#fff"/>
+        <circle cx="11" cy="12" r="4" fill="#157f5f"/>
+        <circle cx="23" cy="12" r="4" fill="#e8a33d"/>
+        <circle cx="17" cy="23" r="4" fill="#0d4f6c"/>
+        <path d="M11 12 L23 12 L17 23 Z" fill="none" stroke="#0d4f6c" stroke-width="1.6"/>
+      </svg>
+      Conecta Unaí
+    </a>
+    <div class="ferramentas" role="group" aria-label="Ferramentas de acessibilidade">
+      <button type="button" id="btn-diminuir" aria-label="Diminuir o tamanho da letra">A-</button>
+      <button type="button" id="btn-aumentar" aria-label="Aumentar o tamanho da letra">A+</button>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+</header>
+
+<nav class="menu" aria-label="Menu principal">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços essenciais</a></li>
+      <li><a href="trilha.html">Aprenda a usar</a></li>
+      <li><a href="voluntarios.html">Seja voluntário</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="conteudo">
+  <div class="container">
+
+    <h1>Trilha de alfabetização digital</h1>
+    <p class="chamada">São seis passos, na ordem. Não precisa fazer tudo de uma vez: marque o
+       que já concluiu e o portal lembra de onde você parou quando voltar neste mesmo celular.</p>
+
+    <div class="progresso">
+      <strong id="progresso-texto">0 de 6 passos concluídos (0%)</strong>
+      <div class="barra" role="progressbar" aria-labelledby="progresso-texto" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span id="progresso-barra"></span>
+      </div>
+      <p style="margin:12px 0 0">
+        <button type="button" id="btn-limpar-trilha" class="botao" style="margin:0">Recomeçar a trilha</button>
+      </p>
+    </div>
+
+    <details class="licao" open>
+      <summary><span class="numero" aria-hidden="true">1</span> Entender o celular e a internet</summary>
+      <div class="corpo">
+        <p>Antes de qualquer coisa, é preciso saber o que está acontecendo quando o celular
+           conecta. Isso evita gastar dados à toa e ficar sem internet no fim do mês.</p>
+        <ol>
+          <li><strong>Wi-Fi e dados móveis são coisas diferentes.</strong> O Wi-Fi é a internet
+              da casa, da praça ou do comércio, e não gasta a sua franquia. Os dados móveis
+              são os do seu chip e acabam.</li>
+          <li><strong>Ligue o Wi-Fi sempre que houver um disponível.</strong> Arraste a tela de
+              cima para baixo e toque no símbolo de ondinhas.</li>
+          <li><strong>Vídeo é o que mais gasta dados.</strong> Deixe para assistir vídeo quando
+              estiver no Wi-Fi.</li>
+          <li><strong>Instale aplicativos só pela loja oficial</strong> (Play Store no Android,
+              App Store no iPhone). Aplicativo enviado por link de WhatsApp costuma ser vírus.</li>
+          <li><strong>Se a letra estiver pequena</strong>, use o botão <strong>A+</strong> aqui em
+              cima nesta página, ou aumente a fonte nos ajustes do próprio celular.</li>
+        </ol>
+        <label class="concluir" for="p1">
+          <input type="checkbox" id="p1"> Concluí este passo
+        </label>
+      </div>
+    </details>
+
+    <details class="licao">
+      <summary><span class="numero" aria-hidden="true">2</span> Criar o seu e-mail</summary>
+      <div class="corpo">
+        <p>O e-mail é o seu endereço na internet. Sem ele não dá para criar conta em quase
+           nenhum serviço, receber resposta de vaga de emprego ou recuperar uma senha perdida.</p>
+        <ol>
+          <li>Abra o aplicativo <strong>Gmail</strong>, que já vem na maioria dos celulares
+              Android, ou entre em <a href="https://mail.google.com" target="_blank" rel="noopener">mail.google.com</a>.</li>
+          <li>Toque em <strong>Criar conta</strong> e escolha a opção de uso pessoal.</li>
+          <li>Escolha um endereço fácil de ditar por telefone. O melhor formato é o seu nome
+              e sobrenome, por exemplo <em>maria.souza</em>. Evite apelido e número solto.</li>
+          <li>Crie uma senha e <strong>anote em um papel guardado em casa</strong>. Senha
+              esquecida é o motivo número um de perder acesso a benefício.</li>
+          <li>Cadastre o seu número de celular na recuperação da conta. É por ele que você
+              volta a entrar se esquecer a senha.</li>
+        </ol>
+        <label class="concluir" for="p2">
+          <input type="checkbox" id="p2"> Concluí este passo
+        </label>
+      </div>
+    </details>
+
+    <details class="licao">
+      <summary><span class="numero" aria-hidden="true">3</span> Criar a sua conta gov.br</summary>
+      <div class="corpo">
+        <p>A conta gov.br é a chave única do governo. Com ela você entra no Meu SUS Digital,
+           no Meu INSS, na Carteira de Trabalho Digital e na consulta do Cadastro Único.</p>
+        <ol>
+          <li>Entre em <a href="https://www.gov.br" target="_blank" rel="noopener">gov.br</a>
+              e toque em <strong>Entrar com gov.br</strong>.</li>
+          <li>Digite o seu <strong>CPF</strong> e siga as perguntas de confirmação.</li>
+          <li>Responda às perguntas sobre a sua vida (ano de nascimento da mãe, por exemplo).
+              Se errar, dá para tentar de novo mais tarde.</li>
+          <li>Se o sistema pedir, aumente o nível da conta pelo aplicativo, usando o
+              reconhecimento facial com a foto da carteira de motorista.</li>
+          <li>Guarde a senha junto com a do e-mail, no mesmo papel.</li>
+        </ol>
+        <div class="bloco">
+          <p>Não existe taxa para criar conta gov.br. Qualquer cobrança é golpe.</p>
+        </div>
+        <label class="concluir" for="p3">
+          <input type="checkbox" id="p3"> Concluí este passo
+        </label>
+      </div>
+    </details>
+
+    <details class="licao">
+      <summary><span class="numero" aria-hidden="true">4</span> Reconhecer golpes e proteger as suas senhas</summary>
+      <div class="corpo">
+        <p>Esta é a lição mais importante da trilha. O medo de golpe é o que mais afasta as
+           pessoas da internet, e ele se resolve com regras simples.</p>
+        <ol>
+          <li><strong>Ninguém do banco liga pedindo senha.</strong> Nem do governo, nem da loja.
+              Se pedirem, desligue.</li>
+          <li><strong>Desconfie de urgência.</strong> "Seu benefício será cancelado hoje",
+              "clique agora ou perde a vaga". Golpe sempre tem pressa.</li>
+          <li><strong>Confira o endereço do site.</strong> Serviço do governo termina em
+              <strong>.gov.br</strong>. Endereço parecido, mas terminado em outra coisa, é falso.</li>
+          <li><strong>Não repita a mesma senha</strong> no banco e nas redes sociais.</li>
+          <li><strong>Ligue a verificação em duas etapas</strong> no WhatsApp: Ajustes,
+              Conta, Confirmação em duas etapas. Isso impede que clonem o seu número.</li>
+          <li>Na dúvida sobre uma mensagem, <strong>não responda e pergunte a alguém de
+              confiança</strong> antes de clicar.</li>
+        </ol>
+        <p>Material oficial para se aprofundar:
+           <a href="https://cartilha.cert.br" target="_blank" rel="noopener">Cartilha de Segurança na Internet</a>.</p>
+        <label class="concluir" for="p4">
+          <input type="checkbox" id="p4"> Concluí este passo
+        </label>
+      </div>
+    </details>
+
+    <details class="licao">
+      <summary><span class="numero" aria-hidden="true">5</span> Procurar trabalho pela internet</summary>
+      <div class="corpo">
+        <p>Boa parte das vagas hoje só é divulgada e recebida pela internet. Com e-mail e
+           currículo simples já dá para concorrer.</p>
+        <ol>
+          <li>Ative a <a href="https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho" target="_blank" rel="noopener">Carteira de Trabalho Digital</a>
+              com a sua conta gov.br. É ela que a empresa pede na contratação.</li>
+          <li>Monte um currículo de <strong>uma página só</strong>, com: nome, cidade, telefone,
+              e-mail, experiências (o que fez e por quanto tempo) e cursos.</li>
+          <li>Não coloque no currículo RG, CPF, número de conta nem foto de documento.</li>
+          <li>Procure vagas no <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" rel="noopener">site do Ministério do Trabalho</a>
+              e na unidade do SINE em Unaí.</li>
+          <li>Ao enviar por e-mail, escreva no assunto o nome da vaga e o seu nome.
+              Exemplo: <em>Vaga de auxiliar de limpeza — Maria Souza</em>.</li>
+        </ol>
+        <label class="concluir" for="p5">
+          <input type="checkbox" id="p5"> Concluí este passo
+        </label>
+      </div>
+    </details>
+
+    <details class="licao">
+      <summary><span class="numero" aria-hidden="true">6</span> Estudar de graça e tirar certificado</summary>
+      <div class="corpo">
+        <p>Certificado gratuito existe, é válido e melhora o currículo. Os dois lugares abaixo
+           são gratuitos de verdade, sem pegadinha e sem cartão de crédito.</p>
+        <ol>
+          <li>Entre na <a href="https://www.escolavirtual.gov.br" target="_blank" rel="noopener">Escola Virtual de Governo</a>
+              e crie a conta com o seu e-mail.</li>
+          <li>Ou entre na <a href="https://www.ev.org.br" target="_blank" rel="noopener">Escola Virtual da Fundação Bradesco</a>,
+              que tem cursos de informática básica e Excel.</li>
+          <li>Comece por um curso curto, de até 20 horas, para ganhar confiança.</li>
+          <li>Ao terminar, <strong>baixe o certificado em PDF</strong> e guarde no e-mail,
+              enviando para você mesmo. Assim ele nunca se perde.</li>
+          <li>Coloque o curso no seu currículo, com nome e carga horária.</li>
+        </ol>
+        <label class="concluir" for="p6">
+          <input type="checkbox" id="p6"> Concluí este passo
+        </label>
+      </div>
+    </details>
+
+    <div class="bloco">
+      <h3>Terminou a trilha?</h3>
+      <p>Ensine uma pessoa. O jeito mais rápido de o bairro inteiro aprender é cada um
+         mostrar para o vizinho o que acabou de aprender.
+         Veja como na página <a href="voluntarios.html">Seja voluntário</a>.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>Conecta Unaí</strong> — iniciativa comunitária de inclusão digital para os bairros de Unaí-MG.</p>
+    <p>O seu progresso na trilha fica guardado apenas neste aparelho e não é enviado a lugar nenhum.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
